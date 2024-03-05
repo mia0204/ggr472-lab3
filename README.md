@@ -7,5 +7,7 @@ This project contains a web map built with Mapbox GL JS showcasing the projects 
 ## Data Sources
 
 Greenest City projects: City of Vancouver Open Data Portal
+
 Local area boundary: City of Vancouver Open Data Portal
+
 Population Change: https://cityhallwatch.wordpress.com/2021/06/06/a-review-of-population-change-2011-2016-are-the-housing-vancouver-strategy-targets-realistic/ 
