@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGR472 Lab3</title>
+    <!-- mapbox API -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+    <!-- mapbox geocoder plugin -->
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.2/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.2/mapbox-gl-geocoder.css"
+        type="text/css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <!-- add the fixed-top class so the nav bar stays on top of the map -->
+    <nav class="navbar bg-light navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand">Vancouver's Greenest City Plan</a>
+            <!-- Set navbar toggler for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Links in nav bar -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAP CONTAINER -->
+    <div id='map' class='map-container'></div>
+
+<!-- NAVIGATION ELEMENTS -->
+<div class='map-search-container'>
+    <label>Click on the local area and project marker!</label>
+    <div id="geocoder" class="geocoder"></div>
+</div>
+
+<!-- LEGEND -->
+<div id='popchange-legend' class='legend'>
+    <h6>Population Change 2011-2016</h6>
+    <div><span style='background-color: #FFE082'></span>-760 - 0</div>
+    <div><span style='background-color: #FFC107'></span>0 - 500</div>
+    <div><span style='background-color: #FF9800'></span>500 - 2000</div>
+    <div><span style='background-color: #FF5722'></span>2000 - 3000</div>
+    <div><span style='background-color: #B71C1C'></span>>3000</div>
+    <div><span></span></div>
+
+    <h6>Greenest City Project Category</h6>
+    <div><span style='background-color: #5C6BC0'></span>Climate Leadership</div>
+    <div><span style='background-color: #45B39D'></span>Green Buildings</div>
+    <div><span style='background-color: #A569BD'></span>Green Transportation</div>
+    <div><span style='background-color: #34495E'></span>Zero Waste</div>
+    <div><span style='background-color: #8BC34A'></span>Access to Nature</div>
+    <div><span style='background-color: #EC7063'></span>Local Food</div>
+    <div><span style='background-color: #F1C40F'></span>Lighter Footprint</div>
+    <div><span style='background-color: #81D4FA'></span>Clean Air</div>
+    <div><span style='background-color: #2E7D32'></span>Green Economy</div>
+    <div><span style='background-color: #757575'></span>Other</div>
+</div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
