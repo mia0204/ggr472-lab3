@@ -2,7 +2,7 @@
 
 ## Web Map: Vancouver's Greenest City Action Plan
 
-Please access the map here.
+Please access the map [here](https://mia0204.github.io/ggr472-lab3/).
 
 This project contains a web map built with Mapbox GL JS showcasing the projects and information about Vancouver's Greenest City Action Plan (GCAP), as well as the City of Vancouver's local areas with their population change from 2011 to 2016.
 
